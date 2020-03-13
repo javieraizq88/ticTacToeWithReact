@@ -14,6 +14,88 @@ import 'jquery';
 import 'popper.js';
 import 'bootstrap';
 
-const Home = props => <h1>Proyecto React Vacío</h1>;
+class TicTacToe extends React.Component {
+    constructor() {
+        super();
+        this.state = {
+            encendidoRojo: 0,
+            encendidoAmarillo: 0,
+            encendidoVerde: 0,
+        }
+    }
 
-ReactDOM.render(<Home />, document.querySelector("#root"));
+    cambiarLuz = (e) => {
+        if (e.target.id=="redLight"&&this.state.encendidoRojo===0) { 
+            e.target.classList.remove("alert-danger");
+            e.target.classList.add("bg-danger") 
+            this.setState({
+                encendidoRojo:1
+            })
+        } else if (e.target.id=="redLight"&&this.state.encendidoRojo===1) { 
+            e.target.classList.add("alert-danger");
+            e.target.classList.remove("bg-danger") 
+            this.setState({
+                encendidoRojo:0
+            })
+        } 
+        
+        if (e.target.id=="yellowLight"&&this.state.encendidoAmarillo===0) { 
+            e.target.classList.remove("alert-warning");
+            e.target.classList.add("bg-warning") 
+            this.setState({
+                encendidoAmarillo:1
+            })
+        } else if (e.target.id=="yellowLight"&&this.state.encendidoAmarillo===1) { 
+            e.target.classList.add("alert-warning");
+            e.target.classList.remove("bg-warning") 
+            this.setState({
+                encendidoAmarillo:0
+            })
+        }
+
+        if (e.target.id=="greenLight"&&this.state.encendidoVerde===0) { 
+            e.target.classList.remove("alert-success");
+            e.target.classList.add("bg-success") 
+            this.setState({
+                encendidoVerde:1
+            })
+        } else if (e.target.id=="greenLight"&&this.state.encendidoVerde===1) { 
+            e.target.classList.add("alert-success");
+            e.target.classList.remove("bg-success") 
+            this.setState({
+                encendidoVerde:0
+            })
+        }
+    } 
+
+    render() {
+        return (
+            <div className= " container TicTacToe">
+                <div className="row primeraFila">
+                    <div className="col cuadrado1_1"></div>
+                    <div className="col cuadrado1_2"></div>
+                    <div className="col cuadrado1_3"></div>
+                </div>
+
+                <div className="row segundaFila">
+                    <div className="col cuadrado2_1"></div>
+                    <div className="col cuadrado2_2"></div>
+                    <div className="col cuadrado2_3"></div>
+                </div>
+                <div className="row terceraaFila">
+                    <div className="col cuadrado3_1"></div>
+                    <div className="col cuadrado3_2"></div>
+                    <div className="col cuadrado3_3"></div>
+                </div>
+            </div>
+
+            // <div className="container justify-content-center" id= "semaforo">
+            //     <div id="redLight" className={" alert-danger redLight"}  onClick={this.cambiarLuz}></div>
+            //     <div id="yellowLight" className={" alert-warning yellowLight"} onClick={e => this.cambiarLuz(e)}></div>
+            //     <div id="greenLight" className={" alert-success greenLight"} onClick={e => this.cambiarLuz(e)}></div>
+            // </div>
+        )
+    }
+}
+
+ReactDOM.render(<TicTacToe />, document.querySelector("#root"));
