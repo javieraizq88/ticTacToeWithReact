@@ -1,74 +1,62 @@
-
-.TicTacToe{
-    background-color: black;
-    margin: 100px auto;
-    width: 300px;
-    height: 310px;
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: white;
 }
 
-.TicTacToe .cuadrado1_1{
-    background-color: white;
-    margin-right: 5px;
-    width: 100px;
-    height: 100px;
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
 }
 
-.TicTacToe .cuadrado1_2{
-    background-color: white;
-    margin-right: 5px;
-    width: 100px;
-    height: 100px;
+.buttons:hover{
+  color: white;
 }
 
-.TicTacToe .cuadrado1_3{
-    background-color: white;
-    margin-right: 0;
-    width: 100px;
-    height: 100px;
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  padding: 10px;
+}
+.grid-item {
+  background-color: #5D5854;
+  ;
+  padding: 30px;
+  font-size: 30px;
+  text-align: center;
+  
 }
 
-.TicTacToe .cuadrado2_1{
-    background-color: white;
-    margin-top: 5px;
-    margin-right: 5px;
-    width: 100px;
-    height: 100px;
+.div1{
+  border-right: 1px solid #696662;
+  border-bottom: 1px solid #696662
 }
-
-.TicTacToe .cuadrado2_2{
-    background-color: white;
-    margin-top: 5px;
-    margin-right: 5px;
-    width: 100px;
-    height: 100px;
+.div2{
+  border-left: 1px solid #696662;
+  border-bottom: 1px solid #696662
 }
-
-.TicTacToe .cuadrado2_3{
-    background-color: white;
-    margin-top: 5px;
-    width: 100px;
-    height: 100px;
+.div3{
+  border-left: 1px solid #696662;
+  border-bottom: 1px solid #696662
 }
-
-.TicTacToe .cuadrado3_1{
-    background-color: white;
-    margin-top: 5px;
-    margin-right: 5px;
-    width: 100px;
-    height: 100px;
+.div4{
+  border-right: 1px solid #696662;
+  border-bottom: 1px solid #696662
 }
-
-.TicTacToe .cuadrado3_2{
-    background-color: white;
-    margin-top: 5px;
-    margin-right: 5px;
-    width: 100px;
-    height: 100px;
+.div5{
+  border-right: 1px solid #696662;
+  border-bottom: 1px solid #696662
 }
-
-.TicTacToe .cuadrado3_3{
-    background-color: white;
-    margin-top: 5px;
-    width: 100px;
-    height: 100px;
+.div6{
+  border-bottom: 1px solid #696662
+}
+.div7{
+  border-right: 1px solid #696662;
+}
+.div8{
+  border-right: 1px solid #696662;
 }
