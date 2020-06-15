@@ -23,12 +23,11 @@ code {
   padding: 10px;
 }
 .grid-item {
-  background-color: #5D5854;
-  ;
-  padding: 30px;
-  font-size: 30px;
+  background-color: #adddaf;
+  padding: 25px;
+  height: 120px;
+  font-size: 40px;
   text-align: center;
-  
 }
 
 .div1{
@@ -59,4 +58,13 @@ code {
 }
 .div8{
   border-right: 1px solid #696662;
+}
+
+#input1,
+#input2{
+  margin-top: 10px;
+  margin-bottom: 15px;
+  text-align: center;
+  padding: 3px;
+  margin: 15px;
 }

@@ -30,7 +30,7 @@ const styleButtonO = {
   color: "blue",
   width: "30%",
   marginTop: "10px",
-  marginLeft: "10px"
+  marginLeft: "40px"
 }
 
 const styleInsideButton = {
@@ -44,13 +44,13 @@ function Board(props) {
     <>
       <h3 style={{ color: 'white' }}></h3>
       <div style={styleChoosePlayer}>
-        <h4 style={{ color: 'white' }}>Elige una opción y pon tu nombre </h4>
+        <h4 style={{ color: 'white' }}>Choose one option and write your name </h4>
         <form>
-          <input type="text" className="mr-2" onChange={(y) => props.handleInput(y)} id="input1" placeholder="      Nombre jugador 1"></input>
-          <input type="text" onChange={(y) => props.handleInput(y)} id="input2" placeholder="      Nombre jugador 2"></input>
+          <input type="text" onChange={(y) => props.handleInput(y)} id="input1" placeholder="Player 1"></input>
+          <input type="text" onChange={(y) => props.handleInput(y)} id="input2" placeholder="Player 2"></input>
           <br />
-          <button type="button" className="mr-5" style={styleButtonX} id="btnX" onClick={(e) => props.select(e)}><span id="spanX" style={styleInsideButton}>X</span></button>
-          <button type="button" className="mr-5" style={styleButtonO} id="btnO" onClick={(e) => props.select(e)}><span id="spanO" style={styleInsideButton}>0</span></button>
+          <button type="button" className="" style={styleButtonX} id="btnX" onClick={(e) => props.select(e)}><span id="spanX" style={styleInsideButton}>X</span></button>
+          <button type="button" className="" style={styleButtonO} id="btnO" onClick={(e) => props.select(e)}><span id="spanO" style={styleInsideButton}>0</span></button>
         </form>
       </div>
     </>

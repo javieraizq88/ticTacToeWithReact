@@ -60,11 +60,11 @@ class TicTac extends React.Component {
       if (this.state.playerdesicion1 === "X") {
         this.setState({ winner: this.state.player1 })
         this.setState({ visual: 3 })
-        console.log("ganador 1")
+        console.log("the winner is player 1")
       } else {
         this.setState({ winner: this.state.player2 })
         this.setState({ visual: 3 })
-        console.log("ganador 2")
+        console.log("the winner is player 2")
       }
 
     } else if (div1 === "0" && div5 === "0" && div9 === "0" ||
@@ -79,11 +79,11 @@ class TicTac extends React.Component {
       if (this.state.playerdesicion1 === "0") {
         this.setState({ winner: this.state.player1 })
         this.setState({ visual: 3 })
-        console.log("ganador 1")
+        console.log("the winner is player 1")
       } else {
         this.setState({ winner: this.state.player2 })
         this.setState({ visual: 3 })
-        console.log("ganador 2")
+        console.log("the winner is player 2")
       }
     }
   }
